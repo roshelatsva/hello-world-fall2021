@@ -1,3 +1,9 @@
+from datetime import date
+import random
+
+x = random.randint(0,10)
+print(x)
+
 
 dinner = {
     "cuisine": "Indian",
@@ -7,7 +13,7 @@ dinner = {
     "totalpax": 2
 }
 
-print (dinner["side-dish"])    #print (myfood["side-dish[x]"]) 
+print (dinner["side-dish"][0])    #print (myfood["side-dish[x]"]) 
 
 #need to ask how can I only print one side dish like in array
 #did we learn conversion from one data type to another?
@@ -15,7 +21,8 @@ print (dinner["side-dish"])    #print (myfood["side-dish[x]"])
 myassignment = {
     "class": "Hello-world",
     "assignment name": "Object as data-type",
-    "due date": 22,
+    "due date": "09-22",
+    "current-date": date.today(),
     #import datetime
     #x = datetime.datetime.now(2021,9,22),  
     #putting dates 
@@ -24,7 +31,7 @@ myassignment = {
 
 }
 
-print (myassignment["due date"])
+print (myassignment["current-date"])
 
 
 shoppingbag = {
